@@ -1,0 +1,21 @@
+
+    /*    Tietokanta luotu näillä komennoilla: */
+
+
+create database shoppinglist;
+
+use shoppinglist;
+
+create table item (
+    id int primary key auto_increment,
+    description varchar(255) not null,
+    amount smallint unsigned not null
+ );
+
+ insert into item (description,amount) values ('Test item',1);
+
+    /*    Lisätty pari riviä dataa niinkuin tehtävänannossa käskettiin: */
+
+
+  insert into item (description,amount) values ('Second test item',2);
+   insert into item (description,amount) values ('Third test item',3)
